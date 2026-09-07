@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Politique de Confidentialité & CGV - AquaDetect</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0077b6;
+            --primary-dark: #023e8a;
+            --accent: #00b4d8;
+            --bg: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding-bottom: 60px;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        header h1 {
+            font-size: 2.2rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 0.95rem;
+            opacity: 0.9;
+        }
+
+        .nav-bar {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            background: rgba(255, 255, 255, 0.15);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .nav-btn:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 30px auto 0;
+            padding: 0 20px;
+        }
+
+        .lang-switcher {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .lang-tab {
+            background: #e2e8f0;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 30px;
+            font-weight: 600;
+            color: var(--text-muted);
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+
+        .lang-tab.active {
+            background: var(--primary);
+            color: white;
+            box-shadow: 0 4px 12px rgba(0, 119, 182, 0.3);
+        }
+
+        .section-card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 32px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+            border: 1px solid var(--border);
+        }
+
+        .section-card h2 {
+            color: var(--primary-dark);
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e0f2fe;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .article {
+            margin-bottom: 20px;
+        }
+
+        .article:last-child {
+            margin-bottom: 0;
+        }
+
+        .article h3 {
+            font-size: 1.1rem;
+            color: var(--text-main);
+            margin-bottom: 6px;
+            font-weight: 600;
+        }
+
+        .article p {
+            color: #475569;
+            font-size: 0.95rem;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        .lang-content {
+            display: none;
+        }
+
+        .lang-content.active {
+            display: block;
+        }
+
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.8rem; }
+            .section-card { padding: 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>AquaDetect</h1>
+        <p>Politique de Confidentialité & Conditions Générales de Vente<br>Privacy Policy & Terms of Sale</p>
+        <p style="margin-top: 8px; font-size: 0.8rem; opacity: 0.8;">Dernière mise à jour / Last updated: 7 septembre 2026</p>
+        
+        <div class="nav-bar">
+            <a href="#privacy" class="nav-btn">Confidentialité / Privacy</a>
+            <a href="#terms" class="nav-btn">CGV / Terms of Sale</a>
+        </div>
+    </header>
+
+    <div class="container">
+        
+        <!-- Selec/Switch Langue -->
+        <div class="lang-switcher">
+            <button class="lang-tab active" onclick="switchLang('fr')">Français 🇫🇷</button>
+            <button class="lang-tab" onclick="switchLang('en')">English 🇬🇧</button>
+        </div>
+
+        <!-- ================= VERSION FRANÇAISE ================= -->
+        <div id="lang-fr" class="lang-content active">
+            
+            <!-- Politique de Confidentialité FR -->
+            <div id="privacy" class="section-card">
+                <h2>Politique de Confidentialité</h2>
+                
+                <div class="article">
+                    <h3>1. Introduction</h3>
+                    <p>La présente Politique de Confidentialité décrit la façon dont l'application AquaDetect recueille, utilise et protège vos informations. En utilisant AquaDetect, vous acceptez les pratiques décrites ci-dessous.</p>
+                </div>
+
+                <div class="article">
+                    <h3>2. Utilisation de la Caméra</h3>
+                    <p>AquaDetect requiert l'accès à l'appareil photo de votre appareil pour fonctionner. Le flux vidéo de la caméra est traité localement sur votre appareil en temps réel par notre intelligence artificielle afin de détecter les espèces aquatiques. Ce flux vidéo continu n'est ni enregistré ni transmis à des serveurs externes.</p>
+                </div>
+
+                <div class="article">
+                    <h3>3. Fonctionnalité de Signalement d'Erreur</h3>
+                    <p>L'application propose un bouton manuel de "Signalement". Lorsque vous choisissez explicitement de cliquer sur ce bouton, l'application capture une photo (image fixe) et l'envoie de manière sécurisée, accompagnée des données de détection actuelles de l'IA, vers un serveur privé (Discord) géré exclusivement par le développeur. Ces données sont utilisées à des fins uniques d'amélioration du modèle d'intelligence artificielle et ne sont pas partagées avec des tiers.</p>
+                </div>
+
+                <div class="article">
+                    <h3>4. Stockage Local</h3>
+                    <p>Vos préférences, espèces favorites, aquariums sauvegardés (nom, volume, type d'eau, liste des espèces et quantités), aquarium actif sélectionné, et statut de l'achat intégré sont sauvegardés localement sur votre appareil via le système SharedPreferences. L'application ne collecte et ne synchronise aucune de ces données sur un serveur externe ou dans le cloud.</p>
+                </div>
+
+                <div class="article">
+                    <h3>5. Outils Tiers et Publicité</h3>
+                    <p>AquaDetect ne contient aucune publicité et n'intègre aucun outil de suivi (trackers) ou SDK d'analyse tiers à des fins commerciales.</p>
+                </div>
+
+                <div class="article">
+                    <h3>6. Contact</h3>
+                    <p>Pour toute question concernant cette politique de confidentialité, vous pouvez contacter le développeur à : <a href="mailto:thibaultvic@gmail.com">thibaultvic@gmail.com</a></p>
+                </div>
+            </div>
+
+            <!-- CGV FR -->
+            <div id="terms" class="section-card">
+                <h2>Conditions Générales de Vente (CGV)</h2>
+                
+                <div class="article">
+                    <h3>1. Objet</h3>
+                    <p>Les présentes Conditions Générales de Vente (CGV) régissent l'achat intégré de l'option "Simulateur Premium" au sein de l'application AquaDetect, éditée par Thibault Vicente, Entrepreneur Individuel.</p>
+                </div>
+
+                <div class="article">
+                    <h3>2. Prix et Paiement</h3>
+                    <p>L'accès complet au simulateur est proposé sous forme d'achat unique définitif. Le prix applicable est celui affiché en monnaie locale (TTC pour l'Union Européenne) sur l'écran d'achat de l'application au moment de la transaction. Le paiement est entièrement traité et sécurisé par les plateformes d'intermédiation Apple App Store (Apple Distribution International Ltd) ou Google Play Store (Google Commerce Ltd).</p>
+                </div>
+
+                <div class="article">
+                    <h3>3. Absence de Droit de Rétractation</h3>
+                    <p>Conformément à l'article L.221-28 du Code de la consommation français, le droit de rétractation ne peut être exercé pour les contenus numériques fournis sur un support immatériel dont l'exécution a commencé immédiatement après votre accord exprès. En cliquant sur le bouton d'achat, vous acceptez la livraison immédiate du simulateur et renoncez expressément à votre droit de rétractation de 14 jours. Aucun remboursement ne sera accordé par l'éditeur.</p>
+                </div>
+
+                <div class="article">
+                    <h3>4. Restauration et Disponibilité</h3>
+                    <p>L'achat est lié à vie à votre compte Apple ID ou Google Play. En cas de changement d'appareil ou de réinstallation, vous pouvez récupérer gratuitement votre accès en utilisant le bouton "Restaurer les achats" présent dans l'application. L'éditeur s'efforce de maintenir l'application accessible, mais ne saurait être tenu responsable des interruptions liées aux pannes des Stores tiers ou à des bugs techniques mineurs.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ================= ENGLISH VERSION ================= -->
+        <div id="lang-en" class="lang-content">
+            
+            <!-- Privacy Policy EN -->
+            <div id="privacy-en" class="section-card">
+                <h2>Privacy Policy</h2>
+                
+                <div class="article">
+                    <h3>1. Introduction</h3>
+                    <p>This Privacy Policy describes how the AquaDetect app collects, uses, and protects your information. By using AquaDetect, you agree to the practices described below.</p>
+                </div>
+
+                <div class="article">
+                    <h3>2. Camera Usage</h3>
+                    <p>AquaDetect requires access to your device's camera to function. The camera's video stream is processed locally on your device in real-time by our artificial intelligence to detect aquatic species. This continuous video stream is neither recorded nor transmitted to external servers.</p>
+                </div>
+
+                <div class="article">
+                    <h3>3. Error Reporting Feature</h3>
+                    <p>The app offers a manual "Report" button. When you explicitly choose to tap this button, the app captures a photo (still image) and securely sends it, along with the current AI detection data, to a private server (Discord) managed exclusively by the developer. This data is used solely to improve the artificial intelligence model and is not shared with third parties.</p>
+                </div>
+
+                <div class="article">
+                    <h3>4. Local Storage</h3>
+                    <p>Your preferences, favorite species, saved aquariums (name, volume, water type, species list and quantities), active selected aquarium, and in-app purchase status are stored locally on your device using SharedPreferences. The app does not collect or sync any of this data to an external server or the cloud.</p>
+                </div>
+
+                <div class="article">
+                    <h3>5. Third-Party Tools and Advertising</h3>
+                    <p>AquaDetect contains no advertisements and does not integrate any tracking tools or third-party analytics SDKs for commercial purposes.</p>
+                </div>
+
+                <div class="article">
+                    <h3>6. Contact</h3>
+                    <p>If you have any questions about this privacy policy, you can contact the developer at: <a href="mailto:thibaultvic@gmail.com">thibaultvic@gmail.com</a></p>
+                </div>
+            </div>
+
+            <!-- Terms of Sale EN -->
+            <div id="terms-en" class="section-card">
+                <h2>Terms of Sale</h2>
+                
+                <div class="article">
+                    <h3>1. Purpose</h3>
+                    <p>These Terms of Sale govern the in-app purchase of the "Premium Simulator" option within the AquaDetect application, published by Thibault Vicente, Sole Proprietor.</p>
+                </div>
+
+                <div class="article">
+                    <h3>2. Price and Payment</h3>
+                    <p>Full access to the simulator is available as a one-time, lifetime purchase. The applicable price is the one displayed in local currency (including taxes for the EU) on the app's purchase screen at the time of transaction. Payment is fully processed and secured by Apple App Store (Apple Distribution International Ltd) or Google Play Store (Google Commerce Ltd).</p>
+                </div>
+
+                <div class="article">
+                    <h3>3. No Right of Withdrawal / Refunds</h3>
+                    <p>In accordance with European consumer law (and Article L.221-28 of the French Consumer Code), the 14-day right of withdrawal does not apply to digital content delivered immediately upon your express consent. By tapping the purchase button, you agree to the immediate delivery of the simulator and expressly waive your right of withdrawal. No refunds will be issued by the developer.</p>
+                </div>
+
+                <div class="article">
+                    <h3>4. Purchase Restoration</h3>
+                    <p>The purchase is permanently linked to your Apple ID or Google Play account. In case of device change or reinstallation, you can recover your access for free using the "Restore Purchases" button inside the app. The developer strives to keep the app accessible but cannot be held liable for interruptions caused by third-party Store failures or minor technical bugs.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Thibault Vicente &bull; AquaDetect. Tous droits réservés / All rights reserved.</p>
+    </footer>
+
+    <script>
+        function switchLang(lang) {
+            // Désactiver tous les contenus
+            document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.lang-tab').forEach(el => el.classList.remove('active'));
+
+            // Activer la langue choisie
+            document.getElementById('lang-' + lang).classList.add('active');
+            
+            // Mettre en surbrillance le bouton
+            if(lang === 'fr') {
+                document.querySelectorAll('.lang-tab')[0].classList.add('active');
+            } else {
+                document.querySelectorAll('.lang-tab')[1].classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>
